@@ -23,5 +23,8 @@ namespace part2_3 {
 		p2->ypos = 4;
 		Point p3 = PntAdder(*p1, *p2);
 		cout << p3.xpos << " " << p3.ypos;
+		delete p1;
+		delete p2;
+		delete &p3;
 	}
 }
