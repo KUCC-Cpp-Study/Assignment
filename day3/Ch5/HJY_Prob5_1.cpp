@@ -11,13 +11,13 @@ namespace COMP_POS
 		switch (pos)
 		{
 		case CLERK:
-			cout << "»ç¿ø" << endl;
+			cout << "ì‚¬ì›" << endl;
 		case SENIOR:
-			cout << "ÁÖÀÓ" << endl;
+			cout << "ì£¼ìž„" << endl;
 		case ASSIST:
-			cout << "´ë¸®" << endl;
+			cout << "ëŒ€ë¦¬" << endl;
 		case MANAGER:
-			cout << "°úÀå" << endl;
+			cout << "ê³¼ìž¥" << endl;
 		}
 	}
 }
@@ -53,10 +53,10 @@ public:
 	}
 	void ShowNameCarInfo()
 	{
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "È¸»ç: " << company << endl;
-		cout << "ÀüÈ­¹øÈ£: " << phone << endl;
-		cout << "Á÷±Þ: "; COMP_POS::ShowPositionInfo(position);
+		cout << "ì´ë¦„: " << name << endl;
+		cout << "íšŒì‚¬: " << company << endl;
+		cout << "ì „í™”ë²ˆí˜¸: " << phone << endl;
+		cout << "ì§ê¸‰: "; COMP_POS::ShowPositionInfo(position);
 		cout << endl;
 	}
 	~NameCard()
