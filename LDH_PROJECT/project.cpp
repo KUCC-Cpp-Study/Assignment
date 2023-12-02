@@ -5,10 +5,7 @@ using namespace std;
 #define SIZE 19
 
 char maze[SIZE][SIZE];
-
 int maze_order[SIZE][SIZE]={0};
-
-
 int offset[8][2] = {{1,1}, {1,0}, {0,1}, {1,-1}, {-1,0}, {0,-1},{-1,-1}, {-1,1}};
 int offset_cost[8]={14,10,10,14,10,10,14,14};
 
@@ -61,12 +58,12 @@ void StartPos()
 {
     int x,y;
     ReadMap();
-    cout<<"시작 위치를 정해주세요."<<endl;
+    cout<<"시작 좌표를 입력해주세요."<<endl;
     cin>>x;
     cin>>y;
     while(maze[x][y]!='0')
     {
-        cout<<"시작 위치를 정해주세요."<<endl;       
+        cout<<"시작 좌표를 입력해주세요."<<endl;       
         cin>>x;
         cin>>y;
     }
@@ -80,12 +77,12 @@ void FinishPos()
 {
     int x,y;
     ReadMap();
-    cout<<"도착 위치를 정해주세요."<<endl;
+    cout<<"도착 좌표를 입력해주세요."<<endl;
     cin>>x;
     cin>>y;
     while(maze[x][y]!='0')
     {
-        cout<<"도착 위치를 정해주세요."<<endl;       
+        cout<<"도착 좌표를 입력해주세요."<<endl;       
         cin>>x;
         cin>>y;
     }
@@ -166,19 +163,6 @@ void LoadMap(const char* filename)
             char value;
             file >> value;
             maze[i][j] = value;
-            if (maze[i][j] == 'x') 
-            {
-                startx = i;
-                starty = j;
-            } 
-            else 
-            {
-                if (maze[i][j] == 'y') 
-                {
-                    finx = i;
-                    finy = j;
-                }
-            }
         }
     }
 
