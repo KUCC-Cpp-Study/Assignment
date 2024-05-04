@@ -52,6 +52,7 @@ int main(void)
     OrderRoute();
     OrderMap();
     ReadMap();
+    system("pause"); // cmd 자동 종료 방지
 }
 
 void StartPos()
