@@ -174,7 +174,7 @@ void ReadMap()
     cout<<"Map"<<endl;
     cout<<setw(3)<<left<<"";
     for(int i=0; i< SIZE; i++)
-        cout<<setw(3)<<left<<i;
+        cout<<setw(4)<<left<<i;
     cout<<endl;
 
 
@@ -188,7 +188,7 @@ void ReadMap()
             else if(maze[i][j]=='0') cout<<setw(5)<<left<<"□"; 
             else if(maze[i][j]=='x') cout<<setw(5)<<left<<"♣";
             else if(maze[i][j]=='y') cout<<setw(5)<<left<<"♥";
-            else if(maze[i][j]=='3') cout<<setw(3)<<left<<maze_order[i][j];
+            else if(maze[i][j]=='3') cout<<setw(4)<<left<<maze_order[i][j];
             else
                 if(maze[i][j]=='2') cout<<setw(5)<<left<<"□"; 
         }
